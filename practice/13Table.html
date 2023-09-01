@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table in HTML</title>
+  </head>
+  <body>
+    <h1>Table in Html</h1>
+
+    <p>
+      The HTML table tag (&lt;table&gt;) is used to represent data in a
+      structured way by creating a table.
+    </p>
+    <p><b>The HTML table can be divided into three parts:</b></p>
+    <ol>
+      <li>Table Header</li>
+      <li>Table Body</li>
+      <li>Table Footer</li>
+    </ol>
+    <br />
+    <ol>
+      <h3>Table Header[&lt;Thead&gt;]</h3>
+    </ol>
+    <li>
+      We use the &lt;thead&gt; tag to add a table head. The &lt;thead&gt; tag
+      must come before any other tags inside a table.
+    </li>
+    <li>
+      The content of &lt;thead&gt; is placed on the top part of the table and we
+      usually place the rows with table headers inside the &lt;thead&gt; tag.
+    </li>
+
+    <br />
+
+    <ol>
+      <h3>Table Body[&lt;Tbody&gt;]</h3>
+    </ol>
+    <li>
+      We use the &lt;tbody&gt; tag to add a table body. The &lt;tbody&gt; tag
+      must come after &lt;thead&gt; and before any other tags inside a table.
+    </li>
+    <li>
+      The content of &lt;tbody&gt; is placed on the center part of the table and
+      we usually place the rows with the content we want to represent in the
+      &lt;tbody&gt;.
+    </li>
+
+    <br />
+    <ol>
+      <h3>Table Footer [&lt;Tfooter&gt;]</h3>
+    </ol>
+    <li>
+      We use the &lt;tfoot&gt; tag to add a table footer. The &lt;tfoot&gt; tag
+      must come after &lt;tbody&gt; and before any other tags inside a table.
+    </li>
+    <li>
+      The content of &lt;tbody&gt; is placed on the bottom part of the table and
+      we usually place the rows with the footer in the &lt;tfoot&gt;.
+    </li>
+
+    <br />
+    <hr />
+    <h2>Tags in Table</h2>
+    <p><b>> Multiple tags to create a Table in HTML.</b></p>
+
+    <li>&lt;Table&gt;</li>
+    <li>&lt;Tr&gt;</li>
+    <li>&lt;Th&gt;</li>
+    <li>&lt;Td&gt;</li>
+    <br />
+
+    <h3>Table Tag [&lt;Table&gt;]</h3>
+    <li>The &lt;Table&gt; tag is used to define a Table.</li>
+    <br />
+    <h3>Table Raw[&lt;Tr&gt;]</h3>
+    <li>The &lt;Tr&gt; tag is used to define a Raw in a Table.</li>
+    <li>
+      The table row can include either table heading, &lt;th&gt; or table data,
+      &lt;td&gt;.
+    </li>
+    <br />
+    <h3>Table Heading[&lt;Th&gt;]</h3>
+    <li>
+      The &lt;th&gt; tag is used to define a table header. It is generally the
+      top row of the table.
+    </li>
+    <li>
+      the styling of the table headers is bold and center-aligned. This is
+      because the &lt;th&gt; tag has some default styling.
+    </li>
+    <br />
+    <h3>Table Data[&lt;Td&gt;]</h3>
+    <li>
+      The &lt;Td&gt;tag is used to define table cells (data). The table cells
+      store data to be displayed in the table.
+    </li>
+    <br />
+    <hr />
+    <h3>Table Border[&lt;Border&gt;]</h3>
+    <li>
+      In HTML, the border attribute is used to add a border to a table and all
+      the cells.
+    </li>
+
+    <br />
+    <h3>Colspan and Rowspan</h3>
+    <h4>Colspan</h4>
+    <li>The Colspan attribute merges cells across multiple columns.</li>
+    <li>
+      The value of the colspan attribute determines how many columns the cell
+      occupies.
+    </li>
+    <br />
+    <h3>Rowspan</h3>
+    <li>The Rowspan attribute merges cells across multiple rows.</li>
+    <li>
+      The value of the Rowspan attribute determines how many rows the cell
+      occupies.
+    </li>
+    <hr />
+    <h2>Example :-</h2>
+
+    <table border="1" width="70%" height="" colpedding="1">
+      <th rowspan="4" colspan="4">Day</th>
+      <tr>
+        <th colspan="3">Seminar</th>
+      </tr>
+
+      <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+      </tr>
+
+      <tr>
+        <th>Begin</th>
+        <th>End</th>
+      </tr>
+      <tr>
+        <td colspan="4" rowspan="4">Monday</td>
+        <td rowspan="5">8:00AM</td>
+        <td rowspan="5">5:00PM</td>
+        <td colspan="3" rowspan="1">Introduction to XML</td>
+      </tr>
+      <tr>
+        <td colspan="3" rowspan="4">Validity:DTD and Relax NG</td>
+      </tr>
+    </table>
+  </body>
+</html>
